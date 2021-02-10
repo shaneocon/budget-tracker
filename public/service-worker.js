@@ -6,10 +6,9 @@ self.addEventListener('install', event => {
         './',
         './index.html',
         './manifest.webmanifest',
-        './assets/css/style.css',
-        './assets/images/brandenburg.jpg',
-        './assets/images/reichstag.jpg',
-        './assets/images/map.jpg',
+        './public/css/styles.css',
+        './public/icon/icon-192x192.png',
+        './public/icon/icon-512x512.png',
       ]);
     })
   );
