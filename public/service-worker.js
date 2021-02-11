@@ -24,6 +24,23 @@ self.addEventListener('install', event => {
   self.skipWaiting();
 });
 
+// activate 
+self.addEventListener("activate", event => {
+  event.waitUntil(
+    caches.keys().then(keyList => {
+      return Promise.all(
+        keyList.map(key => {
+          if (key !== CACHE_NAME && key !== DATA_CACHE_NAME) {
+            console.log("Removing old cache data", key);
+            return caches.delete(key);
+          }
+        })
+      );
+    })
+  );
+  self.clients.claim();
+});
+
 // retrieve assets from cache
 // self.addEventListener('fetch', event => {
 //   event.respondWith(
