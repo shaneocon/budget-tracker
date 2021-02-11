@@ -1,4 +1,7 @@
 # Unit 18 PWA Homework: Online/Offline Budget Trackers
+# Shane O'Connell
+# 2-11-2021
+# 
 
 Add functionality to our existing Budget Tracker application to allow for offline access and functionality.
 
@@ -28,48 +31,4 @@ Giving users a fast and easy way to track their money is important, but allowing
 GIVEN a user is on Budget App without an internet connection
 WHEN the user inputs a withdrawal or deposit
 THEN that will be shown on the page, and added to their transaction history when their connection is back online.
-
-## Starter Code
-
-You have been provided with a nearly functional app in `./Develop`. Your task is to update the app so that it is a PWA. 
-
-* Update the client (front-end) to use the IndexedDB api to store transactions entered by the user when the app is offline and "sync" up with the server whenever the app goes online by posting any transactions that were stored while offline.
-
-* Debug any client (front-end) errors visible in the Chrome Developer Tools Console.
-
-* Create a `manifest.json` file in `/public` and link it in `/public/index.html`.
-
-* Implement a service worker to cache resources necessary for required offline functionality.
-
-* Users should be able to "install" the app for a native-like experience.
-
-- - -
-
-## Commit Early and Often
-
-* One of the most important skills to master as a web developer is version control. Building the habit of committing via Git is important for two reasons:
-
-1. Your commit history is a signal to employers that you are actively working on projects and learning new skills
-
-2. Your commit history allows you to revert your code base in the event that you need to return to a previous state
-
-* Follow these guidelines for committing:
-
-  * Make single purpose commits for related changes to ensure a clean, manageable history. If you are fixing two issues, make two commits
-
-  * Write descriptive, meaningful commit messages so that you and anyone else looking at your repository can easily understand its history
-
-  * Don't commit half done work, for the sake of your collaborators (and your future self!)
-
-  * Test your application before you commit to ensure functionality at every step in the development process
-
-* We would like you to have well over 200 commits by graduation, so commit early and often!
-
-## Submission on BCS
-
-* You are required to submit the following:
-
-  * the URL to the deployed application
-
-  * the URL to the Github repository
 
