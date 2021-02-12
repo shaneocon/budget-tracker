@@ -32,6 +32,6 @@ WHEN the user inputs a withdrawal or deposit
 THEN that will be shown on the page, and added to their transaction history when their connection is back online.
 
 ## Screenshots
-![Budget Tracker](public/icons/budget.jpg)
+![Budget Tracker](./public/icons/budget.jpg)
 
 [Heroku Link](https://sleepy-reef-60614.herokuapp.com/)
